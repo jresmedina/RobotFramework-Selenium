@@ -1,0 +1,802 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+html {
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: white;
+  color: black;
+}
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+  margin: 1em 0em;
+  border: 1px solid black;
+}
+th, td {
+  border: 1px solid black;
+  padding: 0.1em 0.2em;
+  height: 1.5em;
+  width: 12em;
+}
+td.colspan4, th.colspan4 {
+    width: 48em;
+}
+td.colspan3, th.colspan3 {
+    width: 36em;
+}
+td.colspan2, th.colspan2 {
+    width: 24em;
+}
+th {
+  background-color: rgb(192, 192, 192);
+  color: black;
+  height: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+td.name {
+  background-color: rgb(240, 240, 240);
+  letter-spacing: 0.1em;
+}
+td.name, th.name {
+  width: 10em;
+}
+</style>
+<title>testsuite AngularJSModule</title>
+</head>
+<body>
+<h1>testsuite AngularJSModule</h1>
+<table border="1" id="setting">
+<tr>
+<th class="name" colspan="5">Settings</th>
+</tr>
+<tr>
+<td class="name">Documentation</td>
+<td class="colspan4" colspan="4">This testsuite will check all description and links under AngularJS Tables or Section.\n<br>
+\n<br>
+\n<br>
+ANGULAR JS MODULE\n<br>
+\n<br>
+ITEMS:\n<br>
+- Angular JS\n<br>
+- Official Resources\n<br>
+- Articles and Guides\n<br>
+- Community\n<br>
+\n<br>
+TEST POINTS:\n<br>
+Check section description and links\n<br>
+</td>
+</tr>
+<tr>
+<td class="name">Suite Setup</td>
+<td>Suite Setup</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">Suite Teardown</td>
+<td>Suite Teardown</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">Library</td>
+<td>Selenium2Library</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">Variables</td>
+<td>testsuite_AngularJSModule.py</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">Library</td>
+<td>Collections</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1" id="variable">
+<tr>
+<th class="name" colspan="5">Variables</th>
+</tr>
+<tr>
+<td class="name">${URL}</td>
+<td><a href="http://todomvc.com/examples/angularjs/#/">http://todomvc.com/examples/angularjs/#/</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${main_element}</td>
+<td>//aside[@class="learn"]</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${QUOTE_TEXT}</td>
+<td>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${ANGULARJS_TEXT}</td>
+<td>AngularJS</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${FOOTER_TEXT}</td>
+<td>If you have other helpful links to share, or find any of the links above no longer work, please let us know.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${OFFICIALRESOURCES_TEXT}</td>
+<td>Official Resources</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${ARTICLESGUIDE_TEXT}</td>
+<td>Articles and Guides</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name">${COMMUNITY_TEXT}</td>
+<td>Community</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1" id="testcase">
+<tr>
+<th class="name" colspan="5">Test Cases</th>
+</tr>
+<tr>
+<td class="name"><a name="test_Check AngularJS Section">Check AngularJS Section</a></td>
+<td>[Documentation]</td>
+<td class="colspan3" colspan="3">Check AngularJS Text Table/Section.</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>//aside/header/h3</td>
+<td>${ANGULARJS_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${len}</td>
+<td>Get Length</td>
+<td>${AJSTABLE_LABEL}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>: FOR</td>
+<td>${i}</td>
+<td>IN RANGE</td>
+<td>${len}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${index}</td>
+<td>Evaluate</td>
+<td>${i} + 1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/header/span/h5[${index}]</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${text}</td>
+<td>Get From List</td>
+<td>${AJSTABLE_LABEL}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${i}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check Element and Text</td>
+<td>${locator}</td>
+<td>${text}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check AngularJS Links</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="test_Check AngularJS Quote Section">Check AngularJS Quote Section</a></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>//aside/blockquote/p</td>
+<td>${QUOTE_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/blockquote/footer/a</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element Link and Text</td>
+<td>${locator}</td>
+<td>${ANGULARJS_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="test_Check Official Resources Section">Check Official Resources Section</a></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>//aside/h4[1]</td>
+<td>${OFFICIALRESOURCES_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${len}</td>
+<td>Get Length</td>
+<td>${ORESOURCES_LABEL}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>: FOR</td>
+<td>${i}</td>
+<td>IN RANGE</td>
+<td>${len}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${index}</td>
+<td>Evaluate</td>
+<td>${i} + 1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/ul[1]/li[${index}]/a</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${text}</td>
+<td>Get From List</td>
+<td>${ORESOURCES_LABEL}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${i}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check Element Link and Text</td>
+<td>${locator}</td>
+<td>${text}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="test_Check Articles and Guides Section">Check Articles and Guides Section</a></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>//aside/h4[2]</td>
+<td>${ARTICLESGUIDE_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${len}</td>
+<td>Get Length</td>
+<td>${ARTICLEGUIDE_LABEL}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>: FOR</td>
+<td>${i}</td>
+<td>IN RANGE</td>
+<td>${len}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${index}</td>
+<td>Evaluate</td>
+<td>${i} + 1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/ul[2]/li[${index}]/a</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${text}</td>
+<td>Get From List</td>
+<td>${ARTICLEGUIDE_LABEL}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${i}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check Element Link and Text</td>
+<td>${locator}</td>
+<td>${text}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="test_Check Community Section">Check Community Section</a></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>//aside/h4[3]</td>
+<td>${COMMUNITY_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${len}</td>
+<td>Get Length</td>
+<td>${COMMUNITY_LABEL}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>: FOR</td>
+<td>${i}</td>
+<td>IN RANGE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>${len}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${index}</td>
+<td>Evaluate</td>
+<td>${i} + 1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/ul[3]/li[${index}]/a</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${text}</td>
+<td>Get From List</td>
+<td>${COMMUNITY_LABEL}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${i}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check Element Link and Text</td>
+<td>${locator}</td>
+<td>${text}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="test_Check AngularJS Footer Section">Check AngularJS Footer Section</a></td>
+<td>#You can input comments here</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/footer/em</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element and Text</td>
+<td>${locator}</td>
+<td>${FOOTER_TEXT}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Check Element Link and Text</td>
+<td>${locator}/a</td>
+<td>let us know</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1" id="keyword">
+<tr>
+<th class="name" colspan="5">Keywords</th>
+</tr>
+<tr>
+<td class="name"><a name="keyword_Suite Setup">Suite Setup</a></td>
+<td>Open Browser</td>
+<td>${URL}</td>
+<td>ff</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isMenuExist}</td>
+<td>Run Keyword And Return Status</td>
+<td>Wait Until Element Is Visible</td>
+<td>${main_element}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isMenuExist}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="keyword_Suite Teardown">Suite Teardown</a></td>
+<td>Close Browser</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="keyword_Check AngularJS Links">Check AngularJS Links</a></td>
+<td>: FOR</td>
+<td>${i}</td>
+<td>IN RANGE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${locator}</td>
+<td>Set Variable</td>
+<td>//aside/header/span/a[${i}]</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${index}</td>
+<td>Set Variable</td>
+<td>0</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Run Keyword If</td>
+<td>${i}%2 != 0</td>
+<td>Set Test Variable</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${index}</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>${text}</td>
+<td>Get From List</td>
+<td>${LINK_LABEL}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>...</td>
+<td>${index}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td>Check Element Link and Text</td>
+<td>${locator}</td>
+<td>${text}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="keyword_Check Element Link and Text">Check Element Link and Text</a></td>
+<td>[Arguments]</td>
+<td>${locator}</td>
+<td>${text}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isElementExist}</td>
+<td>Run Keyword And Return Status</td>
+<td>Wait Until Element Is Visible</td>
+<td>${locator}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>10 seconds</td>
+<td>Element '${locator}' not exists.</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isElementExist}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isTextCorrect}</td>
+<td>Run Keyword And Return Status</td>
+<td>Element Text Should Be</td>
+<td>${locator}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>${text}</td>
+<td>Actual value display in page is incorrect.</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isTextCorrect}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isLinkPresent}</td>
+<td>Run Keyword And Return Status</td>
+<td>Page Should Contain Link</td>
+<td>${locator}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>Element '${locator}' is not a link.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isLinkPresent}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"><a name="keyword_Check Element and Text">Check Element and Text</a></td>
+<td>[Arguments]</td>
+<td>${locator}</td>
+<td>${text}</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isElementExist}</td>
+<td>Run Keyword And Return Status</td>
+<td>Wait Until Element Is Visible</td>
+<td>${locator}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>10 seconds</td>
+<td>Element '${locator}' not exists.</td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isElementExist}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>${isTextCorrect}</td>
+<td>Run Keyword And Return Status</td>
+<td>Element Text Should Be</td>
+<td>${locator}</td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>...</td>
+<td>${text}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td>Should Be True</td>
+<td>${isTextCorrect}</td>
+<td>Actual value display in page is incorrect.</td>
+<td></td>
+</tr>
+</table>
+</body>
+</html>
